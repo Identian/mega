@@ -1,0 +1,23 @@
+{
+  "product": "swp_inter",
+  "instrument": "Basis_EUR3M_6M_Futures",
+  "supplier": "bloomberg",
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": ["pxLast"],
+    "identifiers": [
+      "ERZ3 Comdty",
+      "ERH4 Comdty",
+      "ERM4 Comdty",
+      "ERU4 Comdty",
+      "ERZ4 Comdty",
+      "ERH5 Comdty",
+      "ERM5 Comdty",
+      "ERU5 Comdty"
+    ]
+  }
+}

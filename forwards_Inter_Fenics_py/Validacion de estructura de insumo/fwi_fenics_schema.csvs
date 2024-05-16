@@ -1,0 +1,22 @@
+version 1.1
+@totalColumns 15
+/*
+Esquema para validar el archivo de insumo de forwards que nos provee Fenics
+Nota: Si actualiza este esquema, por favor actualizar tambien la descripcion: fwi_fenics_schema_description.txt
+Documentacion para entender la estructura de los esquemas: http://digital-preservation.github.io/csv-schema/csv-schema-1.1.html
+*/
+sym: unique(regex("FMD.FX.(FWD|NDF).[a-zA-Z]{6}.(FXPTS|FXOUT).[a-zA-Z0-9]+[a-zA-Z]"))
+brand:
+assetClass:
+subAssetClass:
+priceType:
+ccy1:
+ccy2:
+ccyPair:
+tenor:
+startDate: regex("\d{2}-[a-zA-Z]{3}-\d{4} \d{2}:\d{2}:\d{2}")
+endDate: regex("\d{2}-[a-zA-Z]{3}-\d{4} \d{2}:\d{2}:\d{2}")
+bid:
+ask: 
+mid:
+time:

@@ -1,0 +1,25 @@
+{
+  "product": "swp_inter",
+  "instrument": "Basis_EUR3M_6M",
+  "supplier": "bloomberg",
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": ["pxBid", "pxAsk"],
+    "identifiers": [
+      "EUBSV2 Curncy",
+      "EUBSV3 Curncy",
+      "EUBSV4 Curncy",
+      "EUBSV5 Curncy",
+      "EUBSV7 Curncy",
+      "EUBSV10 Curncy",
+      "EUBSV12 Curncy",
+      "EUBSV15 Curncy",
+      "EUBSV2 0Curncy",
+      "EUBSV25 Curncy"
+    ]
+  }
+}

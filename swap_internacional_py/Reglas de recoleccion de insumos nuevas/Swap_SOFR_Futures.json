@@ -1,0 +1,32 @@
+{
+  "product": "swp_inter",
+  "instrument": "Swap_SOFR_Futures",
+  "supplier": "bloomberg",
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": ["pxBid", "pxAsk", "daysToIntRtEndDt"],
+    "identifiers": [
+      "SER1 Comdty",
+      "SFR1 Comdty",
+      "SFR2 Comdty",
+      "SFR3 Comdty",
+      "SFR4 Comdty",
+      "SFR5 Comdty",
+      "SFR6 Comdty",
+      "SFR7 Comdty",
+      "SFR8 Comdty",
+      "SFR9 Comdty",
+      "SFR10 Comdty",
+      "SFR11 Comdty",
+      "SFR12 Comdty",
+      "SFR13 Comdty",
+      "SFR14 Comdty",
+      "SFR15 Comdty",
+      "SFR16 Comdty"
+    ]
+  }
+}

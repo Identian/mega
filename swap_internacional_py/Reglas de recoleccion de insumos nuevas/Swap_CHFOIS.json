@@ -1,0 +1,36 @@
+{
+  "product": "swp_inter",
+  "instrument": "Swap_CHFOIS",
+  "supplier": "bloomberg",
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": ["pxBid", "pxAsk"],
+    "identifiers": [
+      "SFSNTA Curncy",
+      "SFSNTB Curncy",
+      "SFSNTC Curncy",
+      "SFSNTD Curncy",
+      "SFSNTE Curncy",
+      "SFSNTF Curncy",
+      "SFSNTG Curncy",
+      "SFSNTH Curncy",
+      "SFSNTI Curncy",
+      "SFSNTJ Curncy",
+      "SFSNTK Curncy",
+      "SFSNT1 Curncy",
+      "SFSNT2 Curncy",
+      "SFSNT3 Curncy",
+      "SFSNT4 Curncy",
+      "SFSNT5 Curncy",
+      "SFSNT7 Curncy",
+      "SFSNT10 Curncy",
+      "SFSNT12 Curncy",
+      "SFSNT15 Curncy",
+      "SFSNT20 Curncy"
+    ]
+  }
+}

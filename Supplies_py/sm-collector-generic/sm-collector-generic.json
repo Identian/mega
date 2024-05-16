@@ -1,0 +1,73 @@
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "Ejecutar Colector",
+  "States": {
+    "Fallido": {
+      "Type": "Fail"
+    },
+    "Ejecutar Colector": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName.$": "$.collector_arn"
+      },
+      "Next": "¿Estado del colector?",
+      "ResultPath": "$.taskresult",
+      "OutputPath": "$.taskresult.Payload"
+    },
+    "¿Estado del colector?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.current_attempts",
+          "NumericLessThanPath": "$.max_attempts",
+          "Next": "Reintentar Colector"
+        },
+        {
+          "Variable": "$.state",
+          "StringEquals": "success",
+          "Next": "Exitoso"
+        },
+        {
+          "Not": {
+            "Variable": "$.current_attempts",
+            "NumericLessThanPath": "$.max_attempts"
+          },
+          "Next": "Notificar Fallo"
+        }
+      ]
+    },
+    "Notificar Fallo": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-utility-notifications-mail"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 6,
+          "BackoffRate": 2
+        }
+      ],
+      "Next": "Fallido",
+      "InputPath": "$.email_to_notify"
+    },
+    "Exitoso": {
+      "Type": "Succeed"
+    },
+    "Reintentar Colector": {
+      "Type": "Wait",
+      "Next": "Ejecutar Colector",
+      "SecondsPath": "$.delay"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "product": "swp_inter",
+  "instrument": "Swap_FFE",
+  "supplier": "bloomberg",
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": ["pxBid", "pxAsk"],
+    "identifiers": [
+      "USSFVF3 Curncy",
+      "USSFVF4 Curncy",
+      "USSFVF5 Curncy",
+      "USSFVF6 Curncy",
+      "USSFVF7 Curncy",
+      "USSFVF8 Curncy",
+      "USSFVF9 Curncy",
+      "USSFVF10 Curncy",
+      "USSFVF12 Curncy",
+      "USSFVF15 Curncy",
+      "USSFVF20 Curncy",
+      "USSFVF25 Curncy",
+      "USSFVF30 Curncy",
+      "USSFVF40 Curncy",
+      "USSO1Z Curncy",
+      "USSO2Z Curncy",
+      "USSO3Z Curncy",
+      "USSOA Curncy",
+      "USSOB Curncy",
+      "USSOC Curncy",
+      "USSOD Curncy",
+      "USSOE Curncy",
+      "USSOF Curncy",
+      "USSOG Curncy",
+      "USSOH Curncy",
+      "USSOI Curncy",
+      "USSOJ Curncy",
+      "USSOK Curncy",
+      "USSO1 Curncy",
+      "USSO2 Curncy"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Basis-EUR3M-6M-Futures",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {}
+    },
+    "collector_arn": "lambda/collector/refinitive/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Basis_EUR3M_6M_Futures",
+      "supplier": "Refinitiv",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": ["RIC", "Expiration Date", "Official Close Price"],
+        "identifiers": ["FEU3U3", "FEU3Z3", "FEU3H4", "FEU3M4", "FEU3U4", "FEU3Z4", "FEU3H5", "FEU3M5"]
+      }
+    }
+  }
+}

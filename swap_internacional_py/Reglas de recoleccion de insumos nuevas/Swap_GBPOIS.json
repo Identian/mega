@@ -1,0 +1,39 @@
+{
+  "product": "swp_inter",
+  "instrument": "Swap_GBPOIS",
+  "supplier": "bloomberg",
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": ["pxBid", "pxAsk"],
+    "identifiers": [
+      "BPSWS1Z Curncy",
+      "BPSWS2Z Curncy",
+      "BPSWSA Curncy",
+      "BPSWSB Curncy",
+      "BPSWSC Curncy",
+      "BPSWSD Curncy",
+      "BPSWSE Curncy",
+      "BPSWSF Curncy",
+      "BPSWSG Curncy",
+      "BPSWSH Curncy",
+      "BPSWSI Curncy",
+      "BPSWSJ Curncy",
+      "BPSWSK Curncy",
+      "BPSWS1 Curncy",
+      "BPSWS2 Curncy",
+      "BPSWS3 Curncy",
+      "BPSWS4 Curncy",
+      "BPSWS5 Curncy",
+      "BPSWS7 Curncy",
+      "BPSWS10 Curncy",
+      "BPSWS12 Curncy",
+      "BPSWS15 Curncy",
+      "BPSWS20 Curncy",
+      "BPSWS25 Curncy"
+    ]
+  }
+}

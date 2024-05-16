@@ -1,0 +1,14 @@
+{
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "instrument": "Swap_CHFOIS",
+  "product": "swp_inter",
+  "requests": {
+    "fields": ["pxLast"],
+    "identifiers": ["SSARON Index"],
+    "template": "Intraday Pricing"
+  },
+  "supplier": "bloomberg"
+}

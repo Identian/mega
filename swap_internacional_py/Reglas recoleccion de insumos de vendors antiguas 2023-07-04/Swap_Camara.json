@@ -1,0 +1,45 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Swap-Camara",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {}
+    },
+    "collector_arn": "lambda/collector/refinitive/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Swap_Camara",
+      "supplier": "Refinitiv",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": [
+          "RIC",
+          "Primary Activity",
+          "Secondary Activity"
+        ],
+        "identifiers": [
+          "CLPOIS3M=",
+          "CLPOIS6M=",
+          "CLPOIS9M=",
+          "CLPOIS1Y=",
+          "CLPOIS2Y=",
+          "CLPOIS3Y=",
+          "CLPOIS4Y=",
+          "CLPOIS5Y=",
+          "CLPOIS6Y=",
+          "CLPOIS7Y=",
+          "CLPOIS8Y=",
+          "CLPOIS9Y=",
+          "CLPOIS10Y=",
+          "CLPOIS12Y=",
+          "CLPOIS15Y=",
+          "CLPOIS20Y="
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Swap-PEN",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {}
+    },
+    "collector_arn": "lambda/collector/bloomberg/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Swap_PEN",
+      "supplier": "bloomberg",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": [
+          "pxBid",
+          "pxAsk"
+        ],
+        "identifiers": [
+          "PENSSS2 Curncy",
+          "PENSSS3 Curncy",
+          "PENSSS4 Curncy",
+          "PENSSS5 Curncy",
+          "PENSSS7 Curncy",
+          "PENSSS10 Curncy",
+          "PENSSS12 Curncy",
+          "PENSSS15 Curncy",
+          "PENSSS20 Curncy"
+        ]
+      }
+    }
+  }
+}

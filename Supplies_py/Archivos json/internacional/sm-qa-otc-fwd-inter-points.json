@@ -1,0 +1,368 @@
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "Config GET Nodos Hoy",
+  "States": {
+    "Config GET Nodos Hoy": {
+      "Type": "Pass",
+      "Next": "GET Nodos Hoy",
+      "Parameters": {
+        "params": {
+          "valuation_date.$": "$.valuation_date",
+          "instrument.$": "$.instrument",
+          "recipients.$": "$.recipients"
+        },
+        "get_nodos": {
+          "endpoint.$": "States.Format('{}/{}', $.precia_api, 'pub/otc/forwards/international/points/nodes')",
+          "url_params": {
+            "campos": "id-precia,tenor,dias,mid,bid,ask,fecha-valoracion,instrumento",
+            "fecha-valoracion.$": "$.valuation_date",
+            "instrumento.$": "$.instrument"
+          }
+        },
+        "get_validator": {
+          "valuation_date.$": "$.valuation_date",
+          "api_url.$": "$.precia_api",
+          "endpoint.$": "States.Format('{}/{}', $.precia_api, 'utils/validator/finance')",
+          "url_params": {
+            "campos": "dias,intervalo-confianza,variacion-diaria",
+            "producto": "forwards",
+            "subproducto": "fwd_inter",
+            "instrumento.$": "$.instrument",
+            "base-datos": "pub"
+          }
+        }
+      }
+    },
+    "GET Nodos Hoy": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+      },
+      "Next": "Nodos",
+      "ResultPath": "$.nodes",
+      "InputPath": "$.get_nodos",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Comment": "Error GET nodos",
+          "ResultPath": "$.error_body",
+          "Next": "Error inesperado"
+        }
+      ]
+    },
+    "Nodos": {
+      "Type": "Parallel",
+      "Branches": [
+        {
+          "StartAt": "GET Val Financiero params",
+          "States": {
+            "GET Val Financiero params": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+              },
+              "Next": "Config GET Nodos",
+              "ResultPath": "$.get_validator.validator_params",
+              "OutputPath": "$.get_validator",
+              "InputPath": "$.get_validator"
+            },
+            "Config GET Nodos": {
+              "Type": "Pass",
+              "Next": "GET Historico Nodos",
+              "Parameters": {
+                "endpoint.$": "States.Format('{}/{}', $.api_url, 'pub/otc/forwards/international/points/nodes')",
+                "url_params": {
+                  "campos": "id-precia,tenor,dias,mid,bid,ask,fecha-valoracion,instrumento",
+                  "instrumento.$": "$.url_params.instrumento",
+                  "fecha-valoracion-inicial": {
+                    "type": "date",
+                    "delta.$": "States.Format('-{}', $.validator_params.Payload.data[0].dias)",
+                    "value.$": "$.valuation_date",
+                    "unit": "days"
+                  },
+                  "fecha-valoracion-final.$": "$.valuation_date"
+                }
+              },
+              "ResultPath": "$.get_data"
+            },
+            "GET Historico Nodos": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+              },
+              "Next": "Config Validador Nodos",
+              "InputPath": "$.get_data",
+              "ResultPath": "$.historical"
+            },
+            "Config Validador Nodos": {
+              "Type": "Pass",
+              "Next": "Validador Nodos",
+              "Parameters": {
+                "endpoint.$": "$.get_data.endpoint",
+                "process_path.$": "States.Format('pub/otc/forwards/international/{}', $.url_params.instrumento)",
+                "valuation_date_name": "fecha-valoracion",
+                "valuation_date.$": "$.valuation_date",
+                "time_period.$": "$.validator_params.Payload.data[0].dias",
+                "level.$": "$.validator_params.Payload.data[0].intervalo-confianza",
+                "error_percent.$": "$.validator_params.Payload.data[0].variacion-diaria",
+                "data.$": "$.historical.Payload.data"
+              }
+            },
+            "Validador Nodos": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-utility-finance-validator-v1"
+              },
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "Publicar",
+          "States": {
+            "Publicar": {
+              "Type": "Parallel",
+              "End": true,
+              "Branches": [
+                {
+                  "StartAt": "ETL Archivo Fwd2_Nodos",
+                  "States": {
+                    "ETL Archivo Fwd2_Nodos": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-file-fwd-2"
+                      },
+                      "Next": "Crear Archivo Fwd2_Nodos"
+                    },
+                    "Crear Archivo Fwd2_Nodos": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-creator-files:$LATEST"
+                      },
+                      "Next": "Fwd2_Nodos a FTP"
+                    },
+                    "Fwd2_Nodos a FTP": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-layer-pub-sftp"
+                      },
+                      "End": true,
+                      "Retry": [
+                        {
+                          "ErrorEquals": [
+                            "States.ALL"
+                          ],
+                          "BackoffRate": 1,
+                          "IntervalSeconds": 5,
+                          "MaxAttempts": 3,
+                          "Comment": "FTP niega conexion"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "StartAt": "ETL Archivo Fwd_Nodos",
+                  "States": {
+                    "ETL Archivo Fwd_Nodos": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-file-fwd"
+                      },
+                      "Next": "Crear Archivo Fwd_Nodos"
+                    },
+                    "Crear Archivo Fwd_Nodos": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-creator-files:$LATEST"
+                      },
+                      "Next": "Fwd_Nodos a FTP"
+                    },
+                    "Fwd_Nodos a FTP": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-layer-pub-sftp"
+                      },
+                      "End": true,
+                      "Retry": [
+                        {
+                          "ErrorEquals": [
+                            "States.ALL"
+                          ],
+                          "BackoffRate": 1,
+                          "IntervalSeconds": 5,
+                          "MaxAttempts": 3,
+                          "Comment": "FTP niega conexion"
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "StartAt": "ETL Archivo FwdT2_Nodos",
+                  "States": {
+                    "ETL Archivo FwdT2_Nodos": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-file-fwdT2"
+                      },
+                      "Next": "Crear Archivo FwdT2_Nodos"
+                    },
+                    "Crear Archivo FwdT2_Nodos": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-creator-files:$LATEST"
+                      },
+                      "Next": "FwdT2_Nodos a FTP"
+                    },
+                    "FwdT2_Nodos a FTP": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-layer-pub-sftp"
+                      },
+                      "End": true,
+                      "Retry": [
+                        {
+                          "ErrorEquals": [
+                            "States.ALL"
+                          ],
+                          "BackoffRate": 1,
+                          "IntervalSeconds": 15,
+                          "MaxAttempts": 3,
+                          "Comment": "FTP niega conexion"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "InputPath": "$.nodes.Payload"
+            }
+          }
+        },
+        {
+          "StartAt": "Curva Diaria",
+          "States": {
+            "Curva Diaria": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-creator-file-otc-daily-curve-post"
+              },
+              "InputPath": "$.nodes.Payload",
+              "OutputPath": "$.Payload",
+              "Next": "Curva Diara a FTP"
+            },
+            "Curva Diara a FTP": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-layer-pub-sftp"
+              },
+              "End": true,
+              "Retry": [
+                {
+                  "ErrorEquals": [
+                    "States.ALL"
+                  ],
+                  "BackoffRate": 1,
+                  "IntervalSeconds": 10,
+                  "MaxAttempts": 3,
+                  "Comment": "FTP niega conexion"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "End": true,
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Comment": "Error Inesperado",
+          "Next": "Error inesperado",
+          "ResultPath": "$.error_body"
+        }
+      ]
+    },
+    "Error inesperado": {
+      "Type": "Pass",
+      "Next": "Notificar Error",
+      "Parameters": {
+        "body": {
+          "subject.$": "States.Format('Optimus-K: Error al procesar puntos forward internaciones {} {}', $.params.instrument, $.params.valuation_date)",
+          "recipients.$": "$.params.recipients",
+          "body.$": "States.Format('Cordial saludo. \n\nDurante la ejecucion de la maquina sm-qa-otc-fwd-inter-points ocurrio un error, buscar la ultima ejecucion asocidad a Fwd_{} de la maquina para el dia de hoy. \n\nError comunicado: \n{}\n\nOptimus-K', $.params.instrument, $.error_body)"
+        }
+      }
+    },
+    "Notificar Error": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-utility-notifications-mail"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 6,
+          "BackoffRate": 2
+        }
+      ],
+      "Next": "Fail"
+    },
+    "Fail": {
+      "Type": "Fail"
+    }
+  }
+}

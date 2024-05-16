@@ -1,0 +1,28 @@
+{
+    "state_machine_arn": "sm/collector/generic/arn",
+    "state_machine_excution": "otc-swp-inter-Swap-SOFR-ON",
+    "state_machine_input": {
+      "email_to_notify": {
+        "body": {}
+      },
+      "collector_arn": "lambda/collector/bloomberg/arn",
+      "collector_input": {
+        "product": "swp_inter",
+        "instrument": "Swap_SOFR_ON",
+        "supplier": "bloomberg",
+        "destination": {
+          "bucket": "s3/bucket",
+          "path": "path/s3_otc_swp_inter"
+        },
+        "requests": {
+          "template": "Intraday Pricing",
+          "fields": [
+            "pxLast"
+          ],
+          "identifiers": [
+            "SOFRRATE Index"
+          ]
+        }
+      }
+    }
+  }

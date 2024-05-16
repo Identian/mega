@@ -1,0 +1,16 @@
+{
+  "product": "swp_inter",
+  "instrument": "Swap_GBPOIS_ON",
+  "supplier": "Bloomberg",
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": ["pxLast"],
+    "identifiers": [
+      "SONIO/N Index"
+    ]
+  }
+}

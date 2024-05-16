@@ -1,0 +1,53 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Swap_CHFOIS",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {
+
+      }
+    },
+    "collector_arn": "lambda/collector/refinitive/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Swap_CHFOIS",
+      "supplier": "Refinitiv",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": [
+          "RIC",
+          "Primary Activity",
+          "Secondary Activity"
+        ],
+        "identifiers": [
+          "CHF1MOIS=",
+          "CHF2MOIS=",
+          "CHF3MOIS=",
+          "CHF4MOIS=",
+          "CHF5MOIS=",
+          "CHF6MOIS=",
+          "CHF7MOIS=",
+          "CHF8MOIS=",
+          "CHF9MOIS=",
+          "CHF10MOIS=",
+          "CHF11MOIS=",
+          "CHF1YOIS=",
+          "CHF2YOIS=",
+          "CHF3YOIS=",
+          "CHF4YOIS=",
+          "CHF5YOIS=",
+          "CHF7YOIS=",
+          "CHF10YOIS=",
+          "CHF12YOIS=",
+          "CHF15YOIS=",
+          "CHF20YOIS=",
+          "CHF25YOIS="
+        ]
+      }
+    }
+  }
+}

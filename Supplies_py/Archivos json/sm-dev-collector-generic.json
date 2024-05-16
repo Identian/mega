@@ -1,0 +1,83 @@
+{
+  "Comment": "Maquina que gestiona y registra la recoleccion de insumos para Optimus-K",
+  "StartAt": "Ejecutar Colector",
+  "States": {
+    "Fallido": {
+      "Type": "Fail"
+    },
+    "Ejecutar Colector": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName.$": "$.collector_arn"
+      },
+      "Next": "¿Estado del colector?",
+      "ResultPath": "$.taskresult",
+      "OutputPath": "$.taskresult.Payload",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "ResultPath": "$.error_msg",
+          "Next": "Mail Error"
+        }
+      ]
+    },
+    "Mail Error": {
+      "Type": "Pass",
+      "Next": "Notificar Fallo",
+      "Parameters": {
+        "email_to_notify": {
+          "body": {
+            "recipients.$": "$.email_to_notify.body.recipients",
+            "subject.$": "States.Format('Optimus-K: Proceso de coleccion del insumo {} {} fallo', $.collector_input.product, $.collector_input.instrument)",
+            "body.$": "States.Format('Durante la recoleccion de {} {} de {} se presento un error. \n\n La recoleccion se intento desde la de la maquina de estados AWS \"sm-collector-generic\", para mas detalles buscar por instrumento, y ver la ultima ejecucion asociada. \n\n\n\nLa lambda que presento el error informo: \n\n {}\n\n\n\nOptimus K', $.collector_input.product, $.collector_input.instrument, $.collector_input.supplier, $.error_msg.Cause) "
+          }
+        }
+      }
+    },
+    "¿Estado del colector?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.state",
+          "StringEquals": "success",
+          "Next": "Exitoso"
+        },
+        {
+          "Variable": "$.current_attempts",
+          "NumericLessThanPath": "$.max_attempts",
+          "Next": "Reintentar Colector"
+        },
+        {
+          "Not": {
+            "Variable": "$.current_attempts",
+            "NumericLessThanPath": "$.max_attempts"
+          },
+          "Next": "Notificar Fallo"
+        }
+      ]
+    },
+    "Notificar Fallo": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-utility-notifications-mail"
+      },
+      "Next": "Fallido",
+      "InputPath": "$.email_to_notify"
+    },
+    "Exitoso": {
+      "Type": "Succeed"
+    },
+    "Reintentar Colector": {
+      "Type": "Wait",
+      "Next": "Ejecutar Colector",
+      "SecondsPath": "$.delay"
+    }
+  }
+}

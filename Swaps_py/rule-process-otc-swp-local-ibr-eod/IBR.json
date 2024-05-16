@@ -1,0 +1,67 @@
+{
+    "state_machine_arn": "arn:aws:states:us-east-1:841224051934:stateMachine:sm-otc-swap-local-generic",
+    "state_machine_input": {
+        "swap_curve": "IBR",
+        "output_file_name": "Swap_IBR",
+        "valoration_date": "2022-08-03", 
+        "error_email": {
+            "recipients": [
+                "rparra@precia.co",
+                "aotalora@precia.co",
+                "srodriguez@precia.co",
+                "ltorres@precia.co",
+                "hdaza@precia.co"
+            ],
+            "subject": "Optimus-K: Error al correr la muestra Swap Local {}"
+        },
+        "intraday": "False",
+        "inputs": {
+            "schedule_list": [
+                {
+                    "byproduct_id": "swp_local",
+                    "schedule_name": "ICAP Latam Report",
+                    "schedule_type": "ETL"
+                },
+                {
+                    "byproduct_id": "swp_local",
+                    "schedule_name": "Tradition Report Quotes",
+                    "schedule_type": "ETL"
+                },
+                {
+                    "byproduct_id": "swp_local",
+                    "schedule_name": "Tradition Report Trates",
+                    "schedule_type": "ETL"
+                },
+                {
+                    "byproduct_id": "swp_local",
+                    "schedule_name": "GFI NDF SWAPS",
+                    "schedule_type": "ETL"
+                },
+                {
+                    "byproduct_id": "swp_local",
+                    "schedule_name": "ICAP DV01",
+                    "schedule_type": "ETL"
+                },
+                {
+                    "byproduct_id": "swp_local",
+                    "schedule_name": "GFI DV01",
+                    "schedule_type": "ETL"
+                },
+                {
+                    "byproduct_id": "swp_local",
+                    "schedule_name": "Tradition DV01",
+                    "schedule_type": "ETL"
+                }
+            ],
+            "expected_status": "Exitoso",
+            "max_attempts": 9,
+            "current_attempts": 0,
+            "interval_seconds": 600
+        },
+        "precia_api": {
+            "endpoint": "https://fdet2971k4.execute-api.us-east-1.amazonaws.com/dev"
+        }
+    },
+    "state_machine_excution": "Swap_IBR"
+}
+

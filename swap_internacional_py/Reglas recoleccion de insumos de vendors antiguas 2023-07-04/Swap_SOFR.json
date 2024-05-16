@@ -1,0 +1,42 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Swap-SOFR",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {}
+    },
+    "collector_arn": "lambda/collector/bloomberg/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Swap_SOFR",
+      "supplier": "bloomberg",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": [
+          "pxBid",
+          "pxAsk"
+        ],
+        "identifiers": [
+          "USOSFR4 Curncy",
+          "USOSFR5 Curncy",
+          "USOSFR6 Curncy",
+          "USOSFR7 Curncy",
+          "USOSFR8 Curncy",
+          "USOSFR9 Curncy",
+          "USOSFR10 Curncy",
+          "USOSFR12 Curncy",
+          "USOSFR15 Curncy",
+          "USOSFR20 Curncy",
+          "USOSFR25 Curncy",
+          "USOSFR30 Curncy",
+          "USOSFR40 Curncy",
+          "USOSFR50 Curncy"
+        ]
+      }
+    }
+  }
+}

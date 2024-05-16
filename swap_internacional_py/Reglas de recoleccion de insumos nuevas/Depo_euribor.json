@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "instrument": "Depo_EURIBOR",
+  "product": "swp_inter",
+  "requests": {
+    "fields": ["pxLast"],
+    "identifiers": [
+      "EONIA Index",
+      "EUR001M Index",
+      "EUR001W Index",
+      "EUR003M Index",
+      "EUR012M Index",
+      "EUR006M Index"
+    ],
+    "template": "Intraday Pricing"
+  },
+  "supplier": "bloomberg"
+}

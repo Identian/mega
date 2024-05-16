@@ -1,0 +1,28 @@
+{
+  "product": "swp_inter",
+  "instrument": "Swap_CLP",
+  "supplier": "bloomberg",
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": ["pxBid", "pxAsk"],
+    "identifiers": [
+      "CPXOSS2 Curncy",
+      "CPXOSS3 Curncy",
+      "CPXOSS4 Curncy",
+      "CPXOSS5 Curncy",
+      "CPXOSS6 Curncy",
+      "CPXOSS7 Curncy",
+      "CPXOSS8 Curncy",
+      "CPXOSS9 Curncy",
+      "CPXOSS10 Curncy",
+      "CPXOSS12 Curncy",
+      "CPXOSS15 Curncy",
+      "CPXOSS20 Curncy",
+      "CPXOSS25 Curncy"
+    ]
+  }
+}

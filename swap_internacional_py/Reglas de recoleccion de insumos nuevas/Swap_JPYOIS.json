@@ -1,0 +1,39 @@
+{
+  "product": "swp_inter",
+  "instrument": "Swap_JPYOIS",
+  "supplier": "bloomberg",
+  "destination": {
+    "bucket": "s3/bucket",
+    "path": "path/s3_otc_swp_inter"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": ["pxBid", "pxAsk"],
+    "identifiers": [
+      "JYSO1Z Curncy",
+      "JYSO2Z Curncy",
+      "JYSOA Curncy",
+      "JYSOB Curncy",
+      "JYSOC Curncy",
+      "JYSOD Curncy",
+      "JYSOE Curncy",
+      "JYSOF Curncy",
+      "JYSOG Curncy",
+      "JYSOH Curncy",
+      "JYSOI Curncy",
+      "JYSOJ Curncy",
+      "JYSOK Curncy",
+      "JYSO1 Curncy",
+      "JYSO2 Curncy",
+      "JYSO3 Curncy",
+      "JYSO4 Curncy",
+      "JYSO5 Curncy",
+      "JYSO7 Curncy",
+      "JYSO10 Curncy",
+      "JYSO12 Curncy",
+      "JYSO15 Curncy",
+      "JYSO20 Curncy",
+      "JYSO25 Curncy"
+    ]
+  }
+}

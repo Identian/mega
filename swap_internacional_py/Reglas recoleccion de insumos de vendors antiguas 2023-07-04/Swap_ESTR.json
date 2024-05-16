@@ -1,0 +1,53 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Swap-ESTR",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {}
+    },
+    "collector_arn": "lambda/collector/bloomberg/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Swap_ESTR",
+      "supplier": "bloomberg",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": [
+          "pxBid",
+          "pxAsk"
+        ],
+        "identifiers": [
+          "EESWE1Z Curncy",
+          "EESWE2Z Curncy",
+          "EESWEA Curncy",
+          "EESWEB Curncy",
+          "EESWEC Curncy",
+          "EESWED Curncy",
+          "EESWEE Curncy",
+          "EESWEF Curncy",
+          "EESWEG Curncy",
+          "EESWEH Curncy",
+          "EESWEI Curncy",
+          "EESWEJ Curncy",
+          "EESWEK Curncy",
+          "EESWE1 Curncy",
+          "EESWE1F Curncy",
+          "EESWE2 Curncy",
+          "EESWE3 Curncy",
+          "EESWE4 Curncy",
+          "EESWE5 Curncy",
+          "EESWE7 Curncy",
+          "EESWE10 Curncy",
+          "EESWE12 Curncy",
+          "EESWE15 Curncy",
+          "EESWE20 Curncy",
+          "EESWE25 Curncy"
+        ]
+      }
+    }
+  }
+}

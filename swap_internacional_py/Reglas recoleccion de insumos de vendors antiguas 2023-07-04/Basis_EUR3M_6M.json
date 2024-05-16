@@ -1,0 +1,41 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Basis_EUR3M_6M",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {
+
+      }
+    },
+    "collector_arn": "lambda/collector/refinitive/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Basis_EUR3M_6M",
+      "supplier": "Refinitiv",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": [
+          "RIC",
+          "Primary Activity",
+          "Secondary Activity"
+        ],
+        "identifiers": [
+          "EUR3E6E2Y=",
+          "EUR3E6E3Y=",
+          "EUR3E6E4Y=",
+          "EUR3E6E5Y=",
+          "EUR3E6E7Y=",
+          "EUR3E6E10Y=",
+          "EUR3E6E12Y=",
+          "EUR3E6E15Y=",
+          "EUR3E6E20Y=",
+          "EUR3E6E25Y="
+        ]
+      }
+    }
+  }
+}

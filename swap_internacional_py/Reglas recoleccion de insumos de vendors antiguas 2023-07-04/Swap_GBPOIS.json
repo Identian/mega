@@ -1,0 +1,56 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Swap_GBPOIS",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {
+
+      }
+    },
+    "collector_arn": "lambda/collector/refinitive/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Swap_GBPOIS",
+      "supplier": "Refinitiv",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": [
+          "RIC",
+          "Primary Activity",
+          "Secondary Activity"
+        ],
+        "identifiers": [
+          "SONIAOSR=",
+          "GBPSWOIS=",
+          "GBP2WOIS=",
+          "GBP1MOIS=",
+          "GBP2MOIS=",
+          "GBP3MOIS=",
+          "GBP4MOIS=",
+          "GBP5MOIS=",
+          "GBP6MOIS=",
+          "GBP7MOIS=",
+          "GBP8MOIS=",
+          "GBP9MOIS=",
+          "GBP10MOIS=",
+          "GBP11MOIS=",
+          "GBP1YOIS=",
+          "GBP2YOIS=",
+          "GBP3YOIS=",
+          "GBP4YOIS=",
+          "GBP5YOIS=",
+          "GBP7YOIS=",
+          "GBP10YOIS=",
+          "GBP12YOIS=",
+          "GBP15YOIS=",
+          "GBP20YOIS=",
+          "GBP25YOIS="
+        ]
+      }
+    }
+  }
+}

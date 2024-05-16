@@ -1,0 +1,26 @@
+{
+  "product": "cds",
+  "instrument": "Cds_Colombia",
+  "supplier": "bloomberg",
+  "process":"Derivados OTC",
+  "output_id":"Cds_CO",
+  "destination": {
+    "bucket": "s3-dev-otc-cds-input-bloomberg",
+    "path": "Cds_Bloomberg/"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": [
+      "pxBid",
+      "pxAsk"
+    ],
+    "identifiers": [
+	  "COLOM CDS USD SR 1Y D14 Corp",
+	  "COLOM CDS USD SR 2Y D14 Corp",
+	  "COLOM CDS USD SR 3Y D14 Corp",
+	  "COLOM CDS USD SR 5Y D14 Corp",
+	  "COLOM CDS USD SR 7Y D14 Corp",
+	  "COLOM CDS USD SR 10Y D14 Corp"
+    ]
+  }
+}

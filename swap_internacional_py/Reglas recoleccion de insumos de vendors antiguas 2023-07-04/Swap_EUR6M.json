@@ -1,0 +1,43 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Swap_EUR6M",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {
+
+      }
+    },
+    "collector_arn": "lambda/collector/refinitive/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Swap_EUR6M",
+      "supplier": "Refinitiv",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": [
+          "RIC",
+          "Primary Activity",
+          "Secondary Activity"
+        ],
+        "identifiers": [
+          "EUR6X12F=",
+		  "EUR12X18F=",
+		  "EURAB6E2Y=",
+          "EURAB6E3Y=",
+          "EURAB6E4Y=",
+          "EURAB6E5Y=",
+          "EURAB6E7Y=",
+          "EURAB6E10Y=",
+          "EURAB6E12Y=",
+          "EURAB6E15Y=",
+          "EURAB6E20Y=",
+          "EURAB6E25Y="
+        ]
+      }
+    }
+  }
+}

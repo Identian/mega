@@ -1,0 +1,22 @@
+sym: Debe tener la siguiente estructura: "FMD.FX.(FWD|NDF).{PAR_MONEDA}.(FXPTS|FXOUT).{TENOR}
+---"(FWD|NDF)": Cualquiera de las siguientes cadenas: FWD, NDF
+---"{PAR_MONEDA}": Cadena de seis letras. Ejemplo: USDCLP, EURUSD, etc.
+---"(FXPTS|FXOUT)": Cualquiera de las siguientes cadenas: FXPTS, FXOUT
+---"{TENOR}": Siglas del plazo de vencimiento. Ejemplo: 1M, 1Y, etc.
+---Ejemplo: "FMD.FX.FWD.USDIDR.FXPTS.6M"
+brand: No es un campo de interés, se acepta cualquiera cosa
+assetClass: No es un campo de interés, se acepta cualquiera cosa
+subAssetClass: No es un campo de interés, se acepta cualquiera cosa
+priceType: No es un campo de interés, se acepta cualquiera cosa
+ccy1: No es un campo de interés, se acepta cualquiera cosa
+ccy2: No es un campo de interés, se acepta cualquiera cosa
+ccyPair: No es un campo de interés, se acepta cualquiera cosa
+tenor: No es un campo de interés, se acepta cualquiera cosa
+startDate: Fecha y hora en el siguiente formato DD-MMM-YYYY HH:MM:SS. Ejemplo: 11-Nov-2022 04:59:55
+endDate: Fecha y hora en el siguiente formato DD-MMM-YYYY HH:MM:SS. Ejemplo: 11-Nov-2022 04:59:55
+bid: Numero decimal separado por punto. Puede estar en notación científica
+ask: Numero decimal separado por punto. Puede estar en notación científica
+mid: No es un campo de interés, se acepta cualquiera cosa
+time: No es un campo de interés, se acepta cualquiera cosa
+--
+OTRAS ESPECIFICACIONES: Debe tener 15 columnas separadas por ,

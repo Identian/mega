@@ -1,0 +1,968 @@
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "Pre-insumos",
+  "States": {
+    "Pre-insumos": {
+      "Type": "Parallel",
+      "Branches": [
+        {
+          "StartAt": "GET Estado insumos",
+          "States": {
+            "GET Estado insumos": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-layer-utils-schedules-status-get"
+              },
+              "Next": "¿Todos los insumos listos?"
+            },
+            "Fallo por reintentos": {
+              "Type": "Fail"
+            },
+            "¿Todos los insumos listos?": {
+              "Type": "Choice",
+              "Choices": [
+                {
+                  "Variable": "$.inputs.is_expected_status",
+                  "BooleanEquals": true,
+                  "Comment": "Insumos listos!",
+                  "Next": "Insumos disponibles"
+                },
+                {
+                  "Variable": "$.inputs.current_attempts",
+                  "NumericLessThanPath": "$.inputs.max_attempts",
+                  "Comment": "Esperar",
+                  "Next": "Esperando ..."
+                },
+                {
+                  "Not": {
+                    "Variable": "$.inputs.current_attempts",
+                    "NumericLessThanPath": "$.inputs.max_attempts"
+                  },
+                  "Comment": "Supero max. reintentos",
+                  "Next": "Fallo por reintentos"
+                }
+              ]
+            },
+            "Insumos disponibles": {
+              "Type": "Succeed"
+            },
+            "Esperando ...": {
+              "Type": "Wait",
+              "Next": "GET Estado insumos",
+              "SecondsPath": "$.inputs.interval_seconds"
+            }
+          }
+        },
+        {
+          "StartAt": "¿ES USDCO?",
+          "States": {
+            "¿ES USDCO?": {
+              "Type": "Choice",
+              "Choices": [
+                {
+                  "Variable": "$.swap_curve",
+                  "StringEquals": "USDCO",
+                  "Next": "Config GET Calendario COUS",
+                  "Comment": "USDCO"
+                },
+                {
+                  "Or": [
+                    {
+                      "Variable": "$.swap_curve",
+                      "StringEquals": "IBR"
+                    },
+                    {
+                      "Variable": "$.swap_curve",
+                      "StringEquals": "IBRUVR"
+                    }
+                  ],
+                  "Next": "Config GET Calendario CO",
+                  "Comment": "IBR/IBRUVR"
+                }
+              ]
+            },
+            "Config GET Calendario CO": {
+              "Type": "Pass",
+              "Parameters": {
+                "valuation_date.$": "$.valuation_date",
+                "swap_curve.$": "$.swap_curve",
+                "endpoint.$": "States.Format('{}/{}', $.precia_api.endpoint, 'utils/calendars')",
+                "url_params": {
+                  "campos": "CO",
+                  "fecha-inicial.$": "$.valuation_date",
+                  "fecha-final": {
+                    "type": "date",
+                    "value.$": "$.valuation_date",
+                    "delta": 41,
+                    "unit": "years"
+                  }
+                }
+              },
+              "Next": "GET Calendario CO 41 anios"
+            },
+            "Config GET Calendario COUS": {
+              "Type": "Pass",
+              "Parameters": {
+                "valuation_date.$": "$.valuation_date",
+                "swap_curve.$": "$.swap_curve",
+                "endpoint.$": "States.Format('{}/{}', $.precia_api.endpoint, 'utils/calendars')",
+                "url_params": {
+                  "campos": "CO,US",
+                  "fecha-inicial.$": "$.valuation_date",
+                  "fecha-final": {
+                    "type": "date",
+                    "value.$": "$.valuation_date",
+                    "delta": 41,
+                    "unit": "years"
+                  }
+                }
+              },
+              "Next": "GET Calendario COUS 41 anios"
+            },
+            "GET Calendario COUS 41 anios": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+              },
+              "Next": "Config Swap Days COUS",
+              "ResultPath": "$.calendar"
+            },
+            "Config Swap Days COUS": {
+              "Type": "Pass",
+              "Parameters": {
+                "calendars": {
+                  "COUS.$": "$.calendar.Payload.data"
+                },
+                "valuation_date.$": "$.valuation_date",
+                "swap_curve.$": "$.swap_curve"
+              },
+              "Next": "Calcular Swap Days COUS"
+            },
+            "Calcular Swap Days COUS": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-otc-swaps-sample-local-daycount"
+              },
+              "Retry": [
+                {
+                  "ErrorEquals": [
+                    "Lambda.ServiceException",
+                    "Lambda.AWSLambdaException",
+                    "Lambda.SdkClientException"
+                  ],
+                  "IntervalSeconds": 2,
+                  "MaxAttempts": 6,
+                  "BackoffRate": 2
+                }
+              ],
+              "End": true
+            },
+            "GET Calendario CO 41 anios": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+              },
+              "Next": "Config Swap Days CO",
+              "ResultPath": "$.calendar"
+            },
+            "Config Swap Days CO": {
+              "Type": "Pass",
+              "Parameters": {
+                "calendars": {
+                  "CO.$": "$.calendar.Payload.data"
+                },
+                "valuation_date.$": "$.valuation_date",
+                "swap_curve.$": "$.swap_curve"
+              },
+              "Next": "Calcular Swap Days CO"
+            },
+            "Calcular Swap Days CO": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-otc-swaps-sample-local-daycount"
+              },
+              "Retry": [
+                {
+                  "ErrorEquals": [
+                    "Lambda.ServiceException",
+                    "Lambda.AWSLambdaException",
+                    "Lambda.SdkClientException"
+                  ],
+                  "IntervalSeconds": 2,
+                  "MaxAttempts": 6,
+                  "BackoffRate": 2
+                }
+              ],
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "Config GET Calendario CO 1W",
+          "States": {
+            "Config GET Calendario CO 1W": {
+              "Type": "Pass",
+              "Parameters": {
+                "endpoint.$": "States.Format('{}/{}', $.precia_api.endpoint, 'utils/calendars')",
+                "url_params": {
+                  "campos": "CO",
+                  "fecha-inicial": {
+                    "type": "date",
+                    "value.$": "$.valuation_date",
+                    "delta": -7,
+                    "unit": "days"
+                  },
+                  "fecha-final.$": "$.valuation_date"
+                },
+                "config.$": "$"
+              },
+              "Next": "GET Calendario CO 1W"
+            },
+            "GET Calendario CO 1W": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+              },
+              "Next": "Config Dia bursatil -1D",
+              "ResultPath": "$.last_week"
+            },
+            "Config Dia bursatil -1D": {
+              "Type": "Pass",
+              "Next": "Obtener dia bursatil anterior",
+              "Parameters": {
+                "calendar.$": "$.last_week.Payload",
+                "valuation_date.$": "$.config.valuation_date",
+                "shift": {
+                  "days": -1
+                },
+                "swap_curve.$": "$.config.swap_curve",
+                "error_email.$": "$.config.error_email",
+                "precia_api.$": "$.config.precia_api"
+              }
+            },
+            "Obtener dia bursatil anterior": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-displace-to-business-day"
+              },
+              "Retry": [
+                {
+                  "ErrorEquals": [
+                    "Lambda.ServiceException",
+                    "Lambda.AWSLambdaException",
+                    "Lambda.SdkClientException"
+                  ],
+                  "IntervalSeconds": 2,
+                  "MaxAttempts": 6,
+                  "BackoffRate": 2
+                }
+              ],
+              "Next": "Historicos"
+            },
+            "Historicos": {
+              "Type": "Parallel",
+              "Branches": [
+                {
+                  "StartAt": "Config GET id-precia ",
+                  "States": {
+                    "Config GET id-precia ": {
+                      "Type": "Pass",
+                      "Parameters": {
+                        "endpoint.$": "States.Format('{}/{}', $.Payload.precia_api.endpoint, 'prc/otc/id-precia')",
+                        "url_params": {
+                          "campos": "tenor,id-precia",
+                          "instrumento.$": "$.Payload.swap_curve"
+                        }
+                      },
+                      "Next": "GET id-precia "
+                    },
+                    "GET id-precia ": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+                      },
+                      "End": true
+                    }
+                  }
+                },
+                {
+                  "StartAt": "Config GET Swap  AYER",
+                  "States": {
+                    "Config GET Swap  AYER": {
+                      "Type": "Pass",
+                      "Parameters": {
+                        "endpoint.$": "States.Format('{}/{}', $.Payload.precia_api.endpoint, 'prc/otc/swap/local')",
+                        "url_params": {
+                          "campos": "fecha-valoracion,tenor,dias,mid,bid,ask,tipo-precio",
+                          "instrumento.$": "$.Payload.swap_curve",
+                          "fecha-valoracion.$": "$.Payload.displaced_business_date"
+                        }
+                      },
+                      "Next": "GET Swap  AYER"
+                    },
+                    "GET Swap  AYER": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+                      },
+                      "End": true
+                    }
+                  }
+                },
+                {
+                  "StartAt": "Config GET ba_spread  3M",
+                  "States": {
+                    "Config GET ba_spread  3M": {
+                      "Type": "Pass",
+                      "Parameters": {
+                        "endpoint.$": "States.Format('{}/{}', $.Payload.precia_api.endpoint, 'prc/otc/swap/local/bid-ask-spread')",
+                        "url_params": {
+                          "campos": "fecha,tenor,bid-ask-spread",
+                          "instrumento.$": "$.Payload.swap_curve",
+                          "fecha-inicial": {
+                            "type": "date",
+                            "value.$": "$.Payload.valuation_date",
+                            "delta": -3,
+                            "unit": "months"
+                          },
+                          "fecha-final.$": "$.Payload.displaced_business_date"
+                        }
+                      },
+                      "Next": "GET ba_spread  3M"
+                    },
+                    "GET ba_spread  3M": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+                      },
+                      "End": true
+                    }
+                  }
+                }
+              ],
+              "End": true
+            }
+          }
+        }
+      ],
+      "Next": "Post-Insumos",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Comment": "Error Inesperado",
+          "Next": "Error inesperado",
+          "ResultPath": "$.error_body"
+        }
+      ]
+    },
+    "Error inesperado": {
+      "Type": "Pass",
+      "Next": "Notificar Error",
+      "Parameters": {
+        "body": {
+          "subject.$": "States.Format($.error_email.subject, $.output_file_name)",
+          "recipients.$": "$.error_email.recipients",
+          "body.$": "States.Format('Cordial saludo. \n\nDurante la ejecucion de la maquina sm-otc-swap-local-generic ocurrio un error, buscar la ultima ejecucion asocidad a la maquina para el dia de hoy. \n\nError comunicado: \n{}\n\nOptimus-K', $.error_body)"
+        }
+      }
+    },
+    "Notificar Error": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-utility-notifications-mail"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 6,
+          "BackoffRate": 2
+        }
+      ],
+      "Next": "Fallo"
+    },
+    "Fallo": {
+      "Type": "Fail"
+    },
+    "Post-Insumos": {
+      "Type": "Parallel",
+      "Branches": [
+        {
+          "StartAt": "Pre-insumos Data",
+          "States": {
+            "Pre-insumos Data": {
+              "Type": "Pass",
+              "End": true,
+              "Parameters": {
+                "swap_curve.$": "$[0].swap_curve",
+                "output_file_name.$": "$[0].output_file_name",
+                "valuation_date.$": "$[0].valuation_date",
+                "error_email.$": "$[0].error_email",
+                "intraday.$": "$[0].intraday",
+                "precia_api.$": "$[0].precia_api",
+                "daycount.$": "$[1].body",
+                "id_precia.$": "$[2][0].data",
+                "hist_swp.$": "$[2][1].data",
+                "ba_spread.$": "$[2][2].data"
+              }
+            }
+          }
+        },
+        {
+          "StartAt": "Config GET Brokers Swap  Hoy",
+          "States": {
+            "Config GET Brokers Swap  Hoy": {
+              "Type": "Pass",
+              "Parameters": {
+                "endpoint.$": "States.Format('{}/{}', $[0].precia_api.endpoint, 'src/otc/swap/local')",
+                "url_params": {
+                  "campos": "sistema,hora-inicial,hora-final,tenor,nominal,tipo-orden,precio",
+                  "subyacente.$": "$[0].swap_curve",
+                  "fecha.$": "$[0].valuation_date"
+                }
+              },
+              "Next": "GET Brokers Swap  Hoy"
+            },
+            "GET Brokers Swap  Hoy": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+              },
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "Config GET Brokers dv01  Hoy",
+          "States": {
+            "Config GET Brokers dv01  Hoy": {
+              "Type": "Pass",
+              "Parameters": {
+                "endpoint.$": "States.Format('{}/{}', $[0].precia_api.endpoint, 'src/otc/swap/local/dv01')",
+                "url_params": {
+                  "campos": "sistema,tenor,dv01",
+                  "instrumento.$": "$[0].swap_curve",
+                  "fecha.$": "$[0].valuation_date"
+                }
+              },
+              "Next": "GET Brokers dv01  Hoy"
+            },
+            "GET Brokers dv01  Hoy": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+              },
+              "End": true
+            }
+          }
+        }
+      ],
+      "Next": "Config Crear event muestra",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Comment": "Error Inesperado",
+          "Next": "Error inesperado",
+          "ResultPath": "$.error_body"
+        }
+      ]
+    },
+    "Config Crear event muestra": {
+      "Type": "Pass",
+      "Parameters": {
+        "swap_curve.$": "$[0].swap_curve",
+        "intraday.$": "$[0].intraday",
+        "valuation_date.$": "$[0].valuation_date",
+        "precia_api.$": "$[0].precia_api",
+        "output_file_name.$": "$[0].output_file_name",
+        "error_email.$": "$[0].error_email",
+        "daycount.$": "$[0].daycount",
+        "id_precia.$": "$[0].id_precia",
+        "hist_swp.$": "$[0].hist_swp",
+        "ba_spread.$": "$[0].ba_spread",
+        "broker_info.$": "$[1].data",
+        "dv01.$": "$[2].data"
+      },
+      "Next": "Muestra Swap"
+    },
+    "Muestra Swap": {
+      "Type": "Parallel",
+      "Next": "Publicar",
+      "Branches": [
+        {
+          "StartAt": "Configurar Publicacion",
+          "States": {
+            "Configurar Publicacion": {
+              "Type": "Pass",
+              "Parameters": {
+                "swap_curve.$": "$.swap_curve",
+                "intraday.$": "$.intraday",
+                "valuation_date.$": "$.valuation_date",
+                "output_file_name.$": "$.output_file_name",
+                "precia_api.$": "$.precia_api",
+                "error_email.$": "$.error_email"
+              },
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "Muestra Swap Local",
+          "States": {
+            "Muestra Swap Local": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-otc-swaps-sample-local-1"
+              },
+              "End": true,
+              "OutputPath": "$.Payload"
+            }
+          }
+        }
+      ],
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Comment": "Error Inesperado",
+          "Next": "Error inesperado",
+          "ResultPath": "$.error_body"
+        }
+      ]
+    },
+    "Publicar": {
+      "Type": "Parallel",
+      "End": true,
+      "Branches": [
+        {
+          "StartAt": "Config POST Swap",
+          "States": {
+            "Config POST Swap": {
+              "Type": "Pass",
+              "Parameters": {
+                "post": {
+                  "url.$": "States.Format('{}/{}', $[0].precia_api.endpoint, 'prc/otc/swap/local')",
+                  "data.$": "$[1].body.swap_local.data"
+                },
+                "get_validator": {
+                  "valuation_date.$": "$[0].valuation_date",
+                  "api_url.$": "$[0].precia_api.endpoint",
+                  "endpoint.$": "States.Format('{}/{}', $[0].precia_api.endpoint, 'utils/validator/finance')",
+                  "url_params": {
+                    "campos": "dias,intervalo-confianza,variacion-diaria",
+                    "producto": "swaps",
+                    "subproducto": "swp_local",
+                    "instrumento.$": "$[0].swap_curve",
+                    "base-datos": "prc"
+                  }
+                },
+                "file": {
+                  "output_file_name.$": "$[0].output_file_name",
+                  "data.$": "$[1].body.swap_local.data"
+                }
+              },
+              "Next": "POST PRC Swap"
+            },
+            "POST PRC Swap": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-post"
+              },
+              "ResultPath": null,
+              "InputPath": "$.post",
+              "Next": "Muuestra"
+            },
+            "Muuestra": {
+              "Type": "Parallel",
+              "Branches": [
+                {
+                  "StartAt": "Validador",
+                  "States": {
+                    "Validador": {
+                      "Type": "Parallel",
+                      "Next": "Config Validador Muestra",
+                      "Branches": [
+                        {
+                          "StartAt": "GET Val Financiero params",
+                          "States": {
+                            "GET Val Financiero params": {
+                              "Type": "Task",
+                              "Resource": "arn:aws:states:::lambda:invoke",
+                              "OutputPath": "$.get_validator",
+                              "Parameters": {
+                                "Payload.$": "$",
+                                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+                              },
+                              "Retry": [
+                                {
+                                  "ErrorEquals": [
+                                    "Lambda.ServiceException",
+                                    "Lambda.AWSLambdaException",
+                                    "Lambda.SdkClientException"
+                                  ],
+                                  "IntervalSeconds": 2,
+                                  "MaxAttempts": 6,
+                                  "BackoffRate": 2
+                                }
+                              ],
+                              "InputPath": "$.get_validator",
+                              "ResultPath": "$.get_validator.validator_params",
+                              "Next": "Config GET Muestra"
+                            },
+                            "Config GET Muestra": {
+                              "Type": "Pass",
+                              "Parameters": {
+                                "endpoint.$": "States.Format('{}/{}', $.api_url, 'prc/otc/swap/local')",
+                                "url_params": {
+                                  "campos": "id-precia,fecha-valoracion,instrumento,tenor,dias,mid,bid,ask,tipo-precio",
+                                  "instrumento.$": "$.url_params.instrumento",
+                                  "fecha-valoracion-inicial": {
+                                    "type": "date",
+                                    "delta.$": "States.Format('-{}', $.validator_params.Payload.data[0].dias)",
+                                    "value.$": "$.valuation_date",
+                                    "unit": "days"
+                                  },
+                                  "fecha-valoracion-final.$": "$.valuation_date"
+                                }
+                              },
+                              "ResultPath": "$.get_data",
+                              "Next": "GET Historico Muestra"
+                            },
+                            "GET Historico Muestra": {
+                              "Type": "Task",
+                              "Resource": "arn:aws:states:::lambda:invoke",
+                              "Parameters": {
+                                "Payload.$": "$",
+                                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+                              },
+                              "Retry": [
+                                {
+                                  "ErrorEquals": [
+                                    "Lambda.ServiceException",
+                                    "Lambda.AWSLambdaException",
+                                    "Lambda.SdkClientException"
+                                  ],
+                                  "IntervalSeconds": 2,
+                                  "MaxAttempts": 6,
+                                  "BackoffRate": 2
+                                }
+                              ],
+                              "InputPath": "$.get_data",
+                              "ResultPath": "$.historical",
+                              "End": true
+                            }
+                          }
+                        },
+                        {
+                          "StartAt": "Muestra Hoy",
+                          "States": {
+                            "Muestra Hoy": {
+                              "Type": "Pass",
+                              "End": true,
+                              "Parameters": {
+                                "today_data.$": "$.post.data"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    "Config Validador Muestra": {
+                      "Type": "Pass",
+                      "Next": "Validador Muestra",
+                      "Parameters": {
+                        "endpoint.$": "$[0].get_data.endpoint",
+                        "process_path.$": "States.Format('src/otc/swap/local/{}', $[0].url_params.instrumento)",
+                        "valuation_date_name": "fecha-valoracion",
+                        "valuation_date.$": "$[0].valuation_date",
+                        "time_period.$": "$[0].validator_params.Payload.data[0].dias",
+                        "level.$": "$[0].validator_params.Payload.data[0].intervalo-confianza",
+                        "error_percent.$": "$[0].validator_params.Payload.data[0].variacion-diaria",
+                        "data.$": "$[0].historical.Payload.data",
+                        "today_data.$": "$[1].today_data"
+                      }
+                    },
+                    "Validador Muestra": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-utility-finance-validator-v1"
+                      },
+                      "Retry": [
+                        {
+                          "ErrorEquals": [
+                            "Lambda.ServiceException",
+                            "Lambda.AWSLambdaException",
+                            "Lambda.SdkClientException"
+                          ],
+                          "IntervalSeconds": 2,
+                          "MaxAttempts": 6,
+                          "BackoffRate": 2
+                        }
+                      ],
+                      "End": true
+                    }
+                  }
+                },
+                {
+                  "StartAt": "ETL Archivo Swap",
+                  "States": {
+                    "ETL Archivo Swap": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-file-otc-swp-local-sample"
+                      },
+                      "InputPath": "$.file",
+                      "Next": "Crear Archivo Swap"
+                    },
+                    "Crear Archivo Swap": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-creator-files"
+                      },
+                      "Next": "Archivo muestra a FTP"
+                    },
+                    "Archivo muestra a FTP": {
+                      "Type": "Task",
+                      "Resource": "arn:aws:states:::lambda:invoke",
+                      "OutputPath": "$.Payload",
+                      "Parameters": {
+                        "Payload.$": "$",
+                        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-layer-pub-sftp"
+                      },
+                      "End": true
+                    }
+                  }
+                }
+              ],
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "Config POST ba_spread",
+          "States": {
+            "Config POST ba_spread": {
+              "Type": "Pass",
+              "Parameters": {
+                "post": {
+                  "url.$": "States.Format('{}/{}', $[0].precia_api.endpoint, 'prc/otc/swap/local/bid-ask-spread')",
+                  "data.$": "$[1].body.ba_spread.data"
+                },
+                "get_historical": {
+                  "endpoint.$": "States.Format('{}/{}', $[0].precia_api.endpoint, 'prc/otc/swap/local/bid-ask-spread')",
+                  "url_params": {
+                    "campos": "fecha,instrumento,tenor,bid-ask-spread",
+                    "instrumento.$": "$[0].swap_curve",
+                    "fecha-inicial": {
+                      "type": "date",
+                      "value.$": "$[0].valuation_date",
+                      "delta": -3,
+                      "unit": "months"
+                    },
+                    "fecha-final.$": "$[0].valuation_date"
+                  }
+                },
+                "output_file": {
+                  "filename": {
+                    "name.$": "States.Format('bid_ask_spread_hist_{}', $[0].swap_curve)"
+                  }
+                }
+              },
+              "Next": "POST ba_spread"
+            },
+            "POST ba_spread": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-post"
+              },
+              "ResultPath": null,
+              "InputPath": "$.post",
+              "Next": "GET ba_spread  hoy-3M"
+            },
+            "GET ba_spread  hoy-3M": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-private-api-get"
+              },
+              "Next": "ETL Archivo ba_spread",
+              "InputPath": "$.get_historical",
+              "ResultPath": "$.hitorical_data"
+            },
+            "ETL Archivo ba_spread": {
+              "Type": "Pass",
+              "Next": "Crear Archivo ba_spread",
+              "Parameters": {
+                "body": {
+                  "filename": {
+                    "extension": "csv",
+                    "name.$": "$.output_file.filename.name"
+                  },
+                  "header": {
+                    "include": true
+                  },
+                  "precia_id": {
+                    "include": false
+                  },
+                  "data": {
+                    "column_separator": ",",
+                    "data_list.$": "$.hitorical_data.Payload.data"
+                  },
+                  "destinations": [
+                    {
+                      "sftp_name": "sftp_datafns",
+                      "sftp_path": "path/sftp_out_otc_local_samples_ba_spread"
+                    }
+                  ]
+                }
+              }
+            },
+            "Crear Archivo ba_spread": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-creator-files"
+              },
+              "Next": "Archivo ba_spread a FTP"
+            },
+            "Archivo ba_spread a FTP": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-layer-pub-sftp"
+              },
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "ETL Archivo limit_spread",
+          "States": {
+            "ETL Archivo limit_spread": {
+              "Type": "Pass",
+              "Parameters": {
+                "body": {
+                  "filename": {
+                    "extension": "csv",
+                    "name.$": "States.Format('limit_spread_{}_{}', $[0].swap_curve, $[0].valuation_date)"
+                  },
+                  "header": {
+                    "include": true
+                  },
+                  "precia_id": {
+                    "include": false
+                  },
+                  "data": {
+                    "column_separator": ",",
+                    "data_list.$": "$[1].body.limit_spread.data"
+                  },
+                  "destinations": [
+                    {
+                      "sftp_name": "sftp_datafns",
+                      "sftp_path": "path/sftp_out_otc_local_samples_limit_spread"
+                    }
+                  ]
+                }
+              },
+              "Next": "Crear Archivo limit_spread"
+            },
+            "Crear Archivo limit_spread": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-etl-creator-files"
+              },
+              "Next": "Archivo limit_spread a FTP"
+            },
+            "Archivo limit_spread a FTP": {
+              "Type": "Task",
+              "Resource": "arn:aws:states:::lambda:invoke",
+              "OutputPath": "$.Payload",
+              "Parameters": {
+                "Payload.$": "$",
+                "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-layer-pub-sftp"
+              },
+              "End": true
+            }
+          }
+        }
+      ],
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Comment": "Error Inesperado",
+          "Next": "Error inesperado",
+          "ResultPath": "$.error_body"
+        }
+      ]
+    }
+  }
+}

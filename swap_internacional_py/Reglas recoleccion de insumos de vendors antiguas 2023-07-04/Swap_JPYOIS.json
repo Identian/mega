@@ -1,0 +1,56 @@
+{
+  "state_machine_arn": "sm/collector/generic/arn",
+  "state_machine_excution": "otc-swp-inter-Swap_JPYOIS",
+  "state_machine_input": {
+    "email_to_notify": {
+      "body": {
+
+      }
+    },
+    "collector_arn": "lambda/collector/refinitive/arn",
+    "collector_input": {
+      "product": "swp_inter",
+      "instrument": "Swap_JPYOIS",
+      "supplier": "Refinitiv",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": [
+          "RIC",
+          "Primary Activity",
+          "Secondary Activity"
+        ],
+        "identifiers": [
+          "JPONMU=RR",
+          "JPYSWOIS=",
+          "JPY2WOIS=",
+          "JPY1MOIS=",
+          "JPY2MOIS=",
+          "JPY3MOIS=",
+          "JPY4MOIS=",
+          "JPY5MOIS=",
+          "JPY6MOIS=",
+          "JPY7MOIS=",
+          "JPY8MOIS=",
+          "JPY9MOIS=",
+          "JPY10MOIS=",
+          "JPY11MOIS=",
+          "JPY1YOIS=",
+          "JPY2YOIS=",
+          "JPY3YOIS=",
+          "JPY4YOIS=",
+          "JPY5YOIS=",
+          "JPY7YOIS=",
+          "JPY10YOIS=",
+          "JPY12YOIS=",
+          "JPY15YOIS=",
+          "JPY20YOIS=",
+          "JPY25YOIS="
+        ]
+      }
+    }
+  }
+}

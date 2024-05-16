@@ -1,0 +1,15 @@
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "Archivo a SFTP",
+  "States": {
+    "Archivo a SFTP": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "arn:aws:lambda:us-east-1:810345245993:function:lbd-qa-layer-pub-sftp"
+      },
+      "End": true
+    }
+  }

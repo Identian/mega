@@ -1,0 +1,6927 @@
+{
+  "daycount": {
+    "on_day": 1,
+    "swap_days": [
+      95,
+      185,
+      273,
+      368,
+      549,
+      731,
+      1096,
+      1461,
+      1826,
+      2195,
+      2558,
+      2922,
+      3287,
+      3653,
+      4386,
+      5479,
+      7305,
+      9131,
+      10958
+    ]
+  },
+  "broker_info": [
+    {
+      "sistema": "ICAP",
+      "tipo-derivado": "SA",
+      "mercado": "",
+      "subyacente": "USDCO",
+      "fecha": "2022-08-03",
+      "hora-inicial": "09:38:08",
+      "hora-final": "00:00:00",
+      "fecha-emision": "None",
+      "tenor": "2Y",
+      "nominal": 10900000,
+      "tipo-orden": "Ask",
+      "precio": 33
+    },
+    {
+      "sistema": "ICAP",
+      "tipo-derivado": "SA",
+      "mercado": "",
+      "subyacente": "USDCO",
+      "fecha": "2022-08-03",
+      "hora-inicial": "09:38:08",
+      "hora-final": "00:00:00",
+      "fecha-emision": "None",
+      "tenor": "2Y",
+      "nominal": 10900000,
+      "tipo-orden": "Ask",
+      "precio": 33
+    },
+    {
+      "sistema": "ICAP",
+      "tipo-derivado": "SA",
+      "mercado": "",
+      "subyacente": "USDCO",
+      "fecha": "2022-08-03",
+      "hora-inicial": "10:38:08",
+      "hora-final": "00:00:00",
+      "fecha-emision": "None",
+      "tenor": "2Y",
+      "nominal": 10900000,
+      "tipo-orden": "Ask",
+      "precio": 33
+    },
+    {
+      "sistema": "ICAP",
+      "tipo-derivado": "SA",
+      "mercado": "",
+      "subyacente": "USDCO",
+      "fecha": "2022-08-03",
+      "hora-inicial": "10:38:08",
+      "hora-final": "00:00:00",
+      "fecha-emision": "None",
+      "tenor": "2Y",
+      "nominal": 10900000,
+      "tipo-orden": "Ask",
+      "precio": 33
+    },
+    {
+      "sistema": "ICAP",
+      "tipo-derivado": "SA",
+      "mercado": "",
+      "subyacente": "USDCO",
+      "fecha": "2022-08-03",
+      "hora-inicial": "10:38:08",
+      "hora-final": "00:00:00",
+      "fecha-emision": "None",
+      "tenor": "2Y",
+      "nominal": 10900000,
+      "tipo-orden": "Ask",
+      "precio": 33
+    },
+    {
+      "sistema": "ICAP",
+      "tipo-derivado": "SA",
+      "mercado": "",
+      "subyacente": "USDCO",
+      "fecha": "2022-08-03",
+      "hora-inicial": "10:38:08",
+      "hora-final": "01:00:00",
+      "fecha-emision": "None",
+      "tenor": "2Y",
+      "nominal": 10900000,
+      "tipo-orden": "Ask",
+      "precio": 33
+    },
+    {
+      "sistema": "ICAP",
+      "tipo-derivado": "SA",
+      "mercado": "",
+      "subyacente": "USDCO",
+      "fecha": "2022-08-03",
+      "hora-inicial": "10:38:08",
+      "hora-final": "13:05:00",
+      "fecha-emision": "None",
+      "tenor": "2Y",
+      "nominal": 10900000,
+      "tipo-orden": "Ask",
+      "precio": 33
+    },
+    {
+      "sistema": "ICAP",
+      "tipo-derivado": "SA",
+      "mercado": "",
+      "subyacente": "USDCO",
+      "fecha": "2022-08-03",
+      "hora-inicial": "10:38:08",
+      "hora-final": "14:05:00",
+      "fecha-emision": "None",
+      "tenor": "2Y",
+      "nominal": 10900000,
+      "tipo-orden": "ASK",
+      "precio": 33
+    },
+    {
+      "sistema": "ICAP",
+      "tipo-derivado": "SA",
+      "mercado": "",
+      "subyacente": "USDCO",
+      "fecha": "2022-08-03",
+      "hora-inicial": "10:38:08",
+      "hora-final": "14:05:00",
+      "fecha-emision": "None",
+      "tenor": "2Y",
+      "nominal": 10900000,
+      "tipo-orden": "Ask",
+      "precio": 33
+    }
+  ],
+  "intraday": "False",
+  "ba_spread": [
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 7
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-03",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 25
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 25
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 25
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 25
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 21
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 25
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 21
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-04",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-05",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-06",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-09",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-10",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 7
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 7
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-11",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 22
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-12",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-13",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-16",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 5
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 5
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 7
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-17",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-18",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 7
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-19",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-20",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 4
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 4
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-23",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-24",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-25",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 7
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 5
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-26",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-27",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-05-31",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 3
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-01",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 6
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-02",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-03",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-06",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-07",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-08",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 5
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 7
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 8
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-09",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-10",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-13",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-14",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-15",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-16",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-17",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-21",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 22
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 21
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 23
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-22",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 22
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 26
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-23",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 30
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 9
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 4
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-24",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-28",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 4
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-29",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-06-30",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-01",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 11
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-05",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-06",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-08",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-11",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 60
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 19
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 75
+    },
+    {
+      "fecha": "2022-07-12",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 40
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 24
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-13",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 40
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 50
+    },
+    {
+      "fecha": "2022-07-14",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-15",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 25
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 15
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 16
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 0
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-18",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 30
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 17
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 18
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-19",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-21",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 30
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-22",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 13
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 25
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 12
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 10
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-26",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-27",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 14
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-28",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-07-29",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-01",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "bid-ask-spread": 20
+    },
+    {
+      "fecha": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "bid-ask-spread": 20
+    }
+  ],
+  "output_file_name": "Swap_USDCO",
+  "valuation_date": "2022-08-03",
+  "id_precia": [
+    {
+      "instrumento": "USDCO",
+      "tenor": "10Y",
+      "id-precia": "Swap_USDCO_10Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "12Y",
+      "id-precia": "Swap_USDCO_12Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "15Y",
+      "id-precia": "Swap_USDCO_15Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "18M",
+      "id-precia": "Swap_USDCO_18M"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "1Y",
+      "id-precia": "Swap_USDCO_1Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "20Y",
+      "id-precia": "Swap_USDCO_20Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "25Y",
+      "id-precia": "Swap_USDCO_25Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "2Y",
+      "id-precia": "Swap_USDCO_2Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "30Y",
+      "id-precia": "Swap_USDCO_30Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "3M",
+      "id-precia": "Swap_USDCO_3M"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "3Y",
+      "id-precia": "Swap_USDCO_3Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "4Y",
+      "id-precia": "Swap_USDCO_4Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "5Y",
+      "id-precia": "Swap_USDCO_5Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "6M",
+      "id-precia": "Swap_USDCO_6M"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "6Y",
+      "id-precia": "Swap_USDCO_6Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "7Y",
+      "id-precia": "Swap_USDCO_7Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "8Y",
+      "id-precia": "Swap_USDCO_8Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "9M",
+      "id-precia": "Swap_USDCO_9M"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "9Y",
+      "id-precia": "Swap_USDCO_9Y"
+    },
+    {
+      "instrumento": "USDCO",
+      "tenor": "ON",
+      "id-precia": "Swap_USDCO_ON"
+    }
+  ],
+  "precia_api": {
+    "endpoint": "https://fdet2971k4.execute-api.us-east-1.amazonaws.com/dev"
+  },
+  "error_email": {
+    "recipients": [
+      "rparra@precia.co",
+      "aotalora@precia.co",
+      "srodriguez@precia.co",
+      "ltorres@precia.co",
+      "hdaza@precia.co"
+    ],
+    "subject": "Optimus-K: Error al correr la muestra Swap Local {}"
+  },
+  "hist_swp": [
+    {
+      "fecha-valoracion": "2022-08-02",
+      "instrumento": "USDCO",
+      "tenor": "18M",
+      "dias": "6570",
+      "mid": 20,
+      "bid": 10,
+      "ask": 30,
+      "tipo-precio": null
+    }
+  ],
+  "swap_curve": "USDCO",
+  "dv01": [
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "10Y",
+      "dv01": 1400000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "12Y",
+      "dv01": 1250000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "15Y",
+      "dv01": 1000000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "18M",
+      "dv01": 7000000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "1Y",
+      "dv01": 10000000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "20Y",
+      "dv01": 800000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "25Y",
+      "dv01": 700000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "2Y",
+      "dv01": 5000000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "30Y",
+      "dv01": 600000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "3M",
+      "dv01": 40000000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "3Y",
+      "dv01": 3500000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "4Y",
+      "dv01": 2600000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "5Y",
+      "dv01": 2500000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "6M",
+      "dv01": 20000000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "6Y",
+      "dv01": 2100000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "7Y",
+      "dv01": 1800000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "8Y",
+      "dv01": 1600000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "9M",
+      "dv01": 14000000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "ICAP",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "9Y",
+      "dv01": 1500000
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "10Y",
+      "dv01": 3
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "12Y",
+      "dv01": 2.7
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "15Y",
+      "dv01": 2.4
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "18M",
+      "dv01": 15.4
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "1Y",
+      "dv01": 22
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "20Y",
+      "dv01": 2.1
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "25Y",
+      "dv01": 1.8
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "2Y",
+      "dv01": 11.1
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "30Y",
+      "dv01": 1.5
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "3M",
+      "dv01": 81.8
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "3Y",
+      "dv01": 7.7
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "4Y",
+      "dv01": 6
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "5Y",
+      "dv01": 5
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "6M",
+      "dv01": 42
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "6Y",
+      "dv01": 4.3
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "7Y",
+      "dv01": 3.8
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "8Y",
+      "dv01": 3.5
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "9M",
+      "dv01": 28.6
+    },
+    {
+      "instrumento": "USDCO",
+      "sistema": "Tradition",
+      "fecha": "2022-08-03T00:00:00.000Z",
+      "tenor": "9Y",
+      "dv01": 3.2
+    }
+  ]
+}

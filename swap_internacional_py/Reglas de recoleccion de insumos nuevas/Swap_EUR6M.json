@@ -1,0 +1,28 @@
+{
+  
+      "product": "swp_inter",
+      "instrument": "Swap_EUR6M",
+      "supplier": "bloomberg",
+      "destination": {
+        "bucket": "s3/bucket",
+        "path": "path/s3_otc_swp_inter"
+      },
+      "requests": {
+        "template": "Intraday Pricing",
+        "fields": ["pxBid", "pxAsk"],
+        "identifiers": [
+          "EUFR0F1 Curncy",
+          "EUFR011F Curncy",
+          "EUSA2 Curncy",
+          "EUSA3 Curncy",
+          "EUSA4 Curncy",
+          "EUSA5 Curncy",
+          "EUSA7 Curncy",
+          "EUSA10 Curncy",
+          "EUSA12 Curncy",
+          "EUSA15 Curncy",
+          "EUSA20 Curncy",
+          "EUSA25 Curncy"
+        ]
+      }
+    }

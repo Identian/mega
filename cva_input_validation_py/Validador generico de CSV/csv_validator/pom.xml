@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.precia</groupId>
+  <artifactId>lbd-csv-validator</artifactId>
+  <version>1.0</version>
+
+  <parent>
+    <groupId>at.stderr</groupId>
+    <artifactId>maven-parent</artifactId>
+    <version>2.3.0</version>
+  </parent>
+  
+  <properties>
+	  <maven.compiler.source>11</maven.compiler.source>
+	  <maven.compiler.target>11</maven.compiler.target>
+	</properties>
+
+  <dependencies>
+	  <!-- Necesario para implementar una lambda AWS en java -->
+	<dependency>
+	    <groupId>com.amazonaws</groupId>
+	    <artifactId>aws-lambda-java-core</artifactId>
+	    <version>1.2.2</version>
+	</dependency>
+	<!-- Para comunicarse con S3 AWS -->
+	<dependency>
+	    <groupId>com.amazonaws</groupId>
+	    <artifactId>aws-java-sdk-s3</artifactId>
+	    <version>1.12.505</version>
+	</dependency>
+	<!-- Validacion de archivos csv -->
+	<dependency>
+	    <groupId>uk.gov.nationalarchives</groupId>
+	    <artifactId>csv-validator-java-api</artifactId>
+	    <version>1.2-RC4</version>
+	</dependency>
+	<!-- Registro de eventos -->
+	<dependency>
+	    <groupId>org.apache.logging.log4j</groupId>
+	    <artifactId>log4j-core</artifactId>
+	    <version>2.20.0</version>
+	</dependency>
+
+
+  </dependencies>
+  
+
+  <build>
+    <plugins>
+      <plugin>
+        <!-- Build an executable JAR -->
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>lib/</classpathPrefix>
+              <mainClass>${project.groupId}.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>com.precia.csv_validator.Main</mainClass>
+        </configuration>
+      </plugin>
+      <plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-shade-plugin</artifactId>
+		  <version>3.5.0</version>
+		  <executions>
+		     <!-- Run shade goal on package phase -->
+		    <execution>
+			<phase>package</phase>
+			<goals>
+				<goal>shade</goal>
+			</goals>
+			<configuration>
+			  <createDependencyReducedPom>false</createDependencyReducedPom>
+			</configuration>
+		      </execution>
+		  </executions>
+		</plugin>
+    </plugins>
+  </build>
+
+</project>

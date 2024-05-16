@@ -1,0 +1,27 @@
+{
+  "product": "cds",
+  "instrument": "Cds_Brazil",
+  "supplier": "bloomberg",
+  "process":"Derivados OTC",
+  "output_id":["Cds_BR"],
+  "destination": {
+    "bucket": "s3-qa-otc-cds-input-bloomberg",
+    "path": "Cds_Bloomberg/"
+  },
+  "requests": {
+    "template": "Intraday Pricing",
+    "fields": [
+      "pxBid",
+      "pxAsk"
+    ],
+    "identifiers": [
+	  "BRAZIL CDS USD SR 1Y D14 Corp",
+	  "BRAZIL CDS USD SR 2Y D14 Corp",
+	  "BRAZIL CDS USD SR 3Y D14 Corp",
+	  "BRAZIL CDS USD SR 4Y D14 Corp",
+	  "BRAZIL CDS USD SR 5Y D14 Corp",
+	  "BRAZIL CDS USD SR 7Y D14 Corp",
+	  "BRAZIL CDS USD SR 10Y D14 Corp"
+    ]
+  }
+}
